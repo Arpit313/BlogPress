@@ -1,0 +1,43 @@
+
+h1{
+    text-align: center;
+    font-family: "Audiowide";
+}
+.new-form{
+    background-color: #c9c7c7;
+    width: 75vw;
+    padding:  30px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.container {
+    font-family: "Audiowide";
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px 5px;
+}
+
+  form {
+    display: flex;
+    flex-direction: column;
+    font-size: 23px;
+  }
+  textarea{
+    border: 2px solid black;
+  }
+  input, select{
+    border: 2px solid black;
+    height: 40px;
+    margin: 5px 0;
+    padding: 5px 8px;
+    border-radius: 5px;
+  }
+  button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    float: right;
+    margin-right: 10px;
+  }

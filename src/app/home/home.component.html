@@ -1,0 +1,21 @@
+
+<div class="container">
+  <div *ngIf="blogs.length==0" class="welcome">
+    Welcome to BlogPress!
+    <br>
+    Add your blogs <a routerLink="create"><i class='far fa-hand-point-right'></i> here <i class='far fa-hand-point-left'></i></a>
+  </div>
+
+  <h1 class="heading" *ngIf="blogs.length>0"><i>My Blogs</i></h1>
+  <div class="cards" *ngIf="blogs.length>0">
+    <ng-container *ngFor="let item of blogs; let id=index;">
+      <div class="card-body" (click)="view(id)">
+        <div class="col-md-4 mb-3">
+          <app-blog class="blog" [item]="item"></app-blog>
+        </div>
+      </div>
+
+    </ng-container>
+  </div>
+
+</div>

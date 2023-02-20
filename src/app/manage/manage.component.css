@@ -1,0 +1,55 @@
+h1 {
+  font-family: "Audiowide";
+  text-align: center;
+}
+
+.heading {
+  font-size: 48px;
+  text-align: center;
+  padding-top: 70px;
+  letter-spacing: 2px;
+  font-style: italic;
+  font-family: "Audiowide";
+  margin-top: 70px;
+}
+
+.container {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.body {
+  height: 93vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+td {
+  padding-top: 15px;
+  font-size: 20px;
+  border-color: black;
+  border-radius: 3px;
+}
+
+.table {
+  background-color: bisque;
+  border-color: black;
+  border-radius: 3px;
+}
+
+.thead {
+  background-color: rgb(245, 172, 83);
+  border-color: black;
+  font-size: 20px;
+}
+
+button{
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 5px;
+  border-radius: 200px;
+  background-color: rgba(255, 228, 196, 0.699);
+}

@@ -1,0 +1,21 @@
+<h1 class="title">Create New Blog</h1>
+<div class="container">
+    <form [formGroup]="viewform">
+
+        <label for="title"><b><i>Title:</i></b></label>
+        <input type="text" id="title" name="title" placeholder="Enter the blog title" formControlName="title" readOnly>
+        <span class="valid1" *ngIf="title && title.invalid && title.touched">Required</span>
+        
+        <label for="author" name="author"><b><i>Author:</i></b></label>
+        <input placeholder="Enter author's name" id="author" type="text" formControlName="author" readonly>
+
+        <label for="Desc"><i><b>Description:</b></i></label>
+        <textarea id="Desc" name="Desc" placeholder="Enter your content here" formControlName="Desc" readonly></textarea>
+       
+        <div>
+            <button (click)="back()">Manage</button>
+            <button routerLink="">Home</button>
+        </div>
+
+    </form>
+</div>

@@ -1,0 +1,32 @@
+h1 {
+    font-family: "Audiowide";
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    margin: 1rem;
+}
+
+.cards {
+    background-color: beige;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    border: solid white;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.welcome {
+    text-align: center;
+    font-style: italic;
+    margin: 12rem;
+    font-size: 80px;
+    font-family: "Audiowide";
+}
+a{
+    text-decoration: none;
+    color: rgb(86, 175, 235);
+}
+i{
+    font-size:50px
+}

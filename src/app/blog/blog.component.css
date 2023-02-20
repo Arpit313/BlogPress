@@ -1,0 +1,11 @@
+h5{
+    font-size: 20px;
+}
+p{
+    font-size: 15px;
+}
+.card{
+    width: 18rem; 
+    height: 21rem; 
+    overflow-x: auto;
+}

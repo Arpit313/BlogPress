@@ -1,0 +1,30 @@
+<div class="body">
+
+  <div class="heading" *ngIf="arr.length==0">Add some blogs to manage!!</div>
+
+  <div class="container" *ngIf="arr.length>0">
+    <h1>Manage blogs</h1>
+
+    <table class="table">
+      <thead class="thead">
+        <tr>
+          <th scope="col">S.No</th>
+          <th scope="col">Blog Title</th>
+          <th scope="col">Actions</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr class="table" *ngFor="let item of arr ?.reverse();let id=index; ">
+          <td>{{id+1}}</td>
+          <td>{{item.title}}
+          <td>
+            <button title="View" (click)="view(arr.length-id-1)"><i class="fa fa-eye" style="font-size:30px"></i></button>
+            <button title="Edit" (click)="edit(arr.length-id-1)"><i class='fas fa-edit' style='font-size:30px'></i></button>
+            <button title="Delete" (click)="remove(arr.length-id-1)"><i class="fa fa-trash" style='font-size:30px'></i></button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

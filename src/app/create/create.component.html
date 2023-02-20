@@ -1,0 +1,28 @@
+<body>
+    <div class="container">
+        <h1>Create New Blog</h1>
+        <br>
+        <div class="mb-3 new-form">
+            <form [formGroup]="blog" (ngSubmit)="getValues()">
+                <label for="title" name="title"><b><i>Title:</i></b></label>
+                <input placeholder="Enter the blog title" id="title" type="text" formControlName="title">
+                <span style="color: red;" *ngIf="title && title.invalid && title.touched">Required</span>
+
+                <label for="author" name="author"><b><i>Author:</i></b></label>
+                <input placeholder="Enter author's name" id="author" type="text" formControlName="author">
+                <span style="color: red;" *ngIf="author && author.invalid && author.touched">Required</span>
+                
+                <label for="Desc"><i><b>Description:</b></i></label>
+                <textarea rows="5" id="Desc" type="text" name="Desc" formControlName="Desc"
+                    placeholder="Enter your content here"></textarea>
+                    <span style="color: red;" *ngIf="Desc && Desc.invalid && Desc.touched">Enter atleast 150 characters.</span>
+                    <br>
+                    <div>
+                        <button type="submit">Post</button>
+                        <button type="reset">Cancel</button>
+                    </div>
+
+            </form>
+        </div>
+    </div>
+</body>

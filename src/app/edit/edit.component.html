@@ -1,0 +1,23 @@
+<h1 class="title">Edit Blog</h1>
+<div class="container">
+    <form [formGroup]="editform">
+
+        <label for="title"><b><i>Title:</i></b></label>
+        <input type="text" id="title" name="title" placeholder="Enter the blog title" formControlName="title" required>
+        <span class="valid1" *ngIf="title && title.invalid && title.touched">Required</span>
+
+        <label for="author" name="author"><b><i>Author:</i></b></label>
+        <input placeholder="Enter author's name" id="author" type="text" formControlName="author">
+
+        <label for="Desc"><i><b>Description:</b></i></label>
+        <textarea id="Desc" name="Desc" placeholder="Enter your content here"
+            formControlName="Desc"></textarea>
+        <span id="valid" class="valid" *ngIf="Desc && Desc.invalid && Desc.touched">Enter atleast 150 characters </span>
+        
+        <div>
+            <button (click)="goback()">Back</button>
+            <button (click)="edit()" [disabled]="editform.invalid">Edit</button>
+        </div>
+
+    </form>
+</div>
